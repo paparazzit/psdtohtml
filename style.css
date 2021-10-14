@@ -1,0 +1,27 @@
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@300;400;500&display=swap");
+/* VARIABLES */
+:root {
+	--headline-fnt: "Oswald", sans-serif;
+	--subtitle-fnt: "Open Sans", sans-serif;
+	--fontSize: 16px;
+	--fntCrl: #111111;
+	--fntShadow: #11111186;
+
+	/*colors*/
+	--primary: #ffffff;
+	--secondary: #a5b154;
+	--accents: #292d33;
+	--accents2: #6fafcc;
+	/*transition*/
+	--transition: 0.3s all ease-in-out;
+}
+/* SETUP */
+html {
+	overflow-x: hidden;
+}
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
