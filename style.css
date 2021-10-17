@@ -116,6 +116,7 @@ header {
 		url(img/beach.jpg);
 	background-position: center;
 	background-size: cover;
+	background-attachment: fixed;
 	height: 70vh;
 	display: flex;
 	align-items: flex-end;
@@ -141,6 +142,33 @@ header hgroup {
 	margin-bottom: 30px;
 }
 
+/* HOLIDAY */
+#holiday {
+	padding: 50px 0;
+}
+
+#holiday hgroup {
+	text-align: center;
+	margin-bottom: 50px;
+}
+.holidayTitle h3 {
+	font-size: 2.5rem;
+}
+#holiday .card-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+#holiday .card-wrapper .card {
+	flex: 0 0 30%;
+	padding: 20px 30px;
+	border-radius: 10px;
+	box-shadow: 0 0 7px var(--fntShadow);
+}
+.card .card-img img {
+	width: 100%;
+	display: block;
+}
 /* FOOTER */
 footer {
 	background-color: var(--accents);
@@ -204,7 +232,7 @@ footer .container .bottom {
 		transform: translateX(-120%);
 		transition: var(--transition);
 	}
-	.showNav {
+	.nav-links.showNav {
 		transform: translateX(0);
 	}
 	nav .burger {
