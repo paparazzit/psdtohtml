@@ -15,6 +15,9 @@
 	--accents2: #6fafcc;
 	/*transition*/
 	--transition: 0.3s all ease-in-out;
+	/* Borders */
+	--border1: 1px solid black;
+	--border2: 1px solid red;
 }
 /* SETUP */
 html {
@@ -24,4 +27,115 @@ html {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4 {
+	font-family: var(--headline-fnt);
+}
+
+a,
+p {
+	font-family: var(--subtitle-fnt);
+}
+.container {
+	/* border: var(--border1); */
+	width: 80%;
+	margin: 0 auto;
+	max-width: 1800px;
+}
+.btn {
+	color: var(--primary);
+	font-size: 1.1rem;
+	text-transform: uppercase;
+	border: 1px solid var(--primary);
+	padding: 10px;
+	display: inline-block;
+	transition: var(--transition);
+}
+.btn:hover {
+	background-color: var(--accents);
+	border-color: var(--accents);
+}
+
+/* NAV */
+
+nav {
+	border: var(--border1);
+	background-color: var(--accents);
+}
+nav .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 8px 0;
+}
+nav .logo {
+	color: var(--primary);
+	font-size: 1.5rem;
+	transition: var(--transition);
+}
+nav .logo:hover {
+	color: rgba(255, 255, 255, 0.548);
+}
+.nav-links a {
+	color: var(--primary);
+	margin: 0 10px;
+	transition: var(--transition);
+}
+.nav-links a:hover {
+	color: rgba(255, 255, 255, 0.548);
+}
+.burger {
+	/* border: var(--border2); */
+	width: 25px;
+	height: 20px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	cursor: pointer;
+	display: none;
+}
+.burger span {
+	width: 100%;
+	height: 2px;
+	background-color: var(--primary);
+	display: block;
+}
+
+/* HEADER */
+
+header {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.335), rgba(0, 0, 0, 0.37)),
+		url(img/beach.jpg);
+	background-position: center;
+	background-size: cover;
+	height: 70vh;
+	display: flex;
+	align-items: flex-end;
+	padding: 50px 0;
+}
+header hgroup {
+	/* border: var(--border1); */
+	display: inline-block;
+	letter-spacing: 1.2px;
+	color: var(--primary);
+	text-shadow: 0 0 7px var(--fntShadow);
+}
+
+.headerTitle h1 {
+	font-size: 4.5rem;
+}
+
+.headerTitle p:first-child {
+	font-size: 2rem;
+}
+.headerTitle p {
+	font-size: 1.3rem;
+	margin-bottom: 30px;
 }
